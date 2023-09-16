@@ -85,8 +85,19 @@
     rgba(rgb(0, 0, 0), 0.6),
     rgba(rgb(83, 83, 83), 0.4)),
     url(../../../assets/images/iStock-1141382827.jpg);
-
   background-size: cover;
   background-position: center;
+
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+
+  &__container {
+    height: 95%;
+    width: 60svw;
+    background-color: rgba(0, 0, 0, 0.479);
+  }
+
 
 }
