@@ -51,36 +51,41 @@
 
     &--primary {
       @extend .btn__outline;
-      border: 1px solid $primary;
+      border: 1px solid $color-grey;
       color: $primary;
 
       &-light {
         @extend .btn__outline;
-        border: 1px solid $primary-light;
+        border: 1px solid $color-grey;
         color: $primary-light;
       }
 
       &-dark {
         @extend .btn__outline;
-        border: 1px solid $primary-dark;
+        border: 1px solid $color-grey;
         color: $primary-dark;
+
+        &:hover {
+          background-color: $primary-dark-opacity;
+          scale: (1.025,1.025);
+        }
       }
     }
 
     &--secondary {
       @extend .btn__outline;
-      border: 1px solid $secondary;
+      border: 1px solid $color-grey;
       color: $secondary;
 
       &-light {
         @extend .btn__outline;
-        border: 1px solid $secondary-light;
+        border: 1px solid $color-grey;
         color: $secondary-light;
       }
 
       &-dark {
         @extend .btn__outline;
-        border: 1px solid $secondary-dark;
+        border: 1px solid $color-grey;
         color: $secondary-dark;
       }
     }
