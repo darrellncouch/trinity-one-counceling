@@ -1,0 +1,90 @@
+.btn {
+  text-decoration: none;
+  padding: 1.5rem 2rem;
+  font-size: $default-font-size;
+
+  &:hover {
+    transform: scale(1.025, 1.025);
+    transition: 300ms;
+  }
+
+  &--primary {
+    @extend .btn;
+    background-color: $primary;
+    color: $color-black;
+
+    &-light {
+      @extend .btn;
+      background-color: $primary-light;
+      color: $color-black;
+    }
+
+    &-dark {
+      @extend .btn;
+      background-color: $primary-dark;
+      color: $font-light;
+    }
+  }
+
+  &--secondary {
+    @extend .btn;
+    background-color: $secondary;
+    color: $color-black;
+
+    &-light {
+      @extend .btn;
+      background-color: $secondary-light;
+      color: $color-black;
+    }
+
+    &-dark {
+      @extend .btn;
+      background-color: $secondary-dark;
+      color: $font-light;
+    }
+  }
+
+  &__outline {
+    @extend .btn;
+    border: 1px solid $color-grey;
+    color: $color-grey;
+
+    &--primary {
+      @extend .btn__outline;
+      border: 1px solid $primary;
+      color: $primary;
+
+      &-light {
+        @extend .btn__outline;
+        border: 1px solid $primary-light;
+        color: $primary-light;
+      }
+
+      &-dark {
+        @extend .btn__outline;
+        border: 1px solid $primary-dark;
+        color: $primary-dark;
+      }
+    }
+
+    &--secondary {
+      @extend .btn__outline;
+      border: 1px solid $secondary;
+      color: $secondary;
+
+      &-light {
+        @extend .btn__outline;
+        border: 1px solid $secondary-light;
+        color: $secondary-light;
+      }
+
+      &-dark {
+        @extend .btn__outline;
+        border: 1px solid $secondary-dark;
+        color: $secondary-dark;
+      }
+    }
+  }
+}
+
+
