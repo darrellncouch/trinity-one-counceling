@@ -1,8 +1,15 @@
 @import "../../../sass/main.scss";
 
 .footer {
-  height: 5rem;
-  width: 100%;
-  background-color: $primary-dark;
+  height: 15rem;
+  width: calc(100% - 6rem);
+  padding: 1rem 3rem;
+  background-color: $background-secondary;
   font-size: $default-font-size;
+  color: $font-dark;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
 }

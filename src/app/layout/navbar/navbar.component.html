@@ -1,10 +1,10 @@
-<div class="navbar">
-  <h1 class="navbar__heading">
-    <span class="navbar__heading--primary">Trinity-One</span>
-    <span class="navbar__heading--secondary">Counceling</span>
+<div [ngClass]="navClass">
+  <h1 [ngClass]="headingClass">
+    <span [ngClass]="headingPClass">Trinity-One</span>
+    <span [ngClass]="headingSClass">Counseling</span>
   </h1>
 
-  <div class="navbar__contact">
+  <div class="navbar__contact" *ngIf="isAtTop">
     <a class="btn__outline--primary-dark" href="mailto:debra@trinityonecounseling.com">
       debra@trinityonecounseling.com
     </a>
@@ -13,10 +13,11 @@
     </a>
   </div>
 
-  <div class="navbar__menu">
+  <div [ngClass]="menuClass">
+      <a *ngIf="!isAtTop" class="nav-link" href="#home">Home</a>
       <a class="nav-link" href="#practice">My Practice</a>
-      <a class="nav-link" href="#about-me">About Me</a>
       <a class="nav-link" href="#areas-of-practice">Areas of Practice</a>
+      <a class="nav-link" href="#about-me">About Me</a>
       <a class="nav-link" href="#location">location</a>
   </div>
 </div>

@@ -1,7 +1,7 @@
 @import "../../../sass/main.scss";
 
 .hero {
-  height: calc(100svh - 25rem);
+  height: calc(100svh);
   background-image: linear-gradient(
     to right bottom,
     rgba(rgb(0, 0, 0), 0.6),
@@ -29,12 +29,21 @@
   font-size: $default-font-size;
   color: $font;
   padding: 3rem;
+
+  &__heading {
+    text-align: center;
+    font-size: 5rem;
+    font-weight: 200;
+    letter-spacing: 2px;
+    width: 100%;
+  }
 }
 
 .practice-description {
   display: flex;
   flex-direction: column;
   gap: 3rem;
+  padding-top: 6rem;
 
   &__item {
     display: flex;
@@ -45,15 +54,24 @@
   &__img {
 
     &-1 {
-      background-image: url(../../../assets/images/iStock-500891249.jpg);
+      background-image:
+        linear-gradient(
+          to right bottom,
+          rgba(rgb(0, 0, 0), 0.6),
+          rgba(rgb(83, 83, 83), 0.4)),
+        url(../../../assets/images/iStock-500891249.jpg);
       flex-basis: 30%;
       background-size: cover;
       background-position: top;
     }
 
     &-2 {
-      background-image: url(../../../assets/images/iStock-503916737.jpg);
-      flex-basis: 30%;
+      background-image:
+        linear-gradient(
+          to right bottom,
+          rgba(rgb(80, 79, 79), 0.6),
+          rgba(rgb(83, 83, 83), 0.4)),url(../../../assets/images/iStock-503916737.jpg);
+        flex-basis: 30%;
       background-size: cover;
       background-position: center;
     }
@@ -67,15 +85,53 @@
     justify-content: center;
     align-items: center;
     padding: 2rem 5rem;
+    font-size: 2rem;
   }
 }
 
 .background--secondary {
-  background-color: #8b9e8a;
+  background-color: $background-secondary;
 }
 
 .background--tirshiary {
-  background-color: #d9ba9e;
+  background-color: $background-tershiary;
+}
+
+.practice-areas {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  gap: 3rem;
+  padding: 10rem;
+
+  &__card {
+    width: 45%;
+    background-color: $forground;
+    display: flex;
+    flex-direction: column;
+    color: $font;
+
+    .card__header {
+      width: 100%;
+      text-align: center;
+      padding: 2rem 0;
+      font-size: 3rem;
+    }
+
+    .card__body {
+      padding: 3rem;
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: center;
+      align-items: center;
+      gap: 2rem;
+      font-size: 2rem;
+
+      .treatment-item {
+        padding: 1rem;
+      }
+    }
+  }
 }
 
 .aboutme {
@@ -95,9 +151,61 @@
 
   &__container {
     height: 95%;
-    width: 60svw;
+    width: 80svw;
+    padding: 3rem;
     background-color: rgba(0, 0, 0, 0.479);
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: center;
+
+    &-text {
+      flex-basis: 76%;
+      padding: 1rem 3rem;
+      color: $font-light;
+      font-size: $default-font-size;
+    }
   }
 
 
+}
+
+.card {
+  flex-basis: 20%;
+  background-color: $background;
+
+  &__img {
+    height: auto;
+    width: 100%;
+  }
+
+  &__body {
+    padding: 2rem;
+  }
+
+}
+
+.location {
+  height: calc(100svh - 25rem);
+  display: flex;
+  flex-flow: row nowrap;
+
+  &__map {
+    height: 100%;
+    flex-basis: 40%;
+  }
+
+  &__info {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    font-size: 2rem;
+  }
+}
+
+.section-locator {
+  margin-top: 10rem;
 }

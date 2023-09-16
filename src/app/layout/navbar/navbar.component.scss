@@ -2,7 +2,7 @@
 
 .navbar {
   z-index: 10;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
@@ -13,6 +13,26 @@
   align-items: center;
   background-color: $forground;
   border-bottom: 1px solid $color-grey;
+  transition: 400ms;
+
+  &--min {
+    z-index: 10;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    position: fixed;
+    height: 7rem;
+    display: flex;
+    flex-flow: row nowrap;
+    background-color: $forground;
+    border-bottom: 1px solid $color-grey;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 2px 0px 2px 2px #ccc;
+
+    transition: 500ms;
+  }
 
 
   &__heading {
@@ -23,14 +43,33 @@
     font-family: 'Raleway', sans-serif;
     color: $font;
 
+    &--min {
+      display: flex;
+      flex-flow: row nowrap;
+      font-family: 'Raleway', sans-serif;
+      color: $font;
+      transition: 1000ms;
+      flex-basis: 50rem;
+      gap: 1rem;
+      padding: 0 1rem;
+    }
+
     &--primary {
       font-size: 5rem;
       letter-spacing: 2px;
+
+      &-min {
+        font-size: 2.5rem;
+      }
     }
 
     &--secondary {
       font-size: 3rem;
       letter-spacing: 8px;
+
+      &-min {
+        font-size: 2.5rem;
+      }
     }
   }
 
@@ -48,17 +87,30 @@
     justify-content: center;
     gap: 1rem;
 
-    .nav-link {
-      text-decoration: none;
-      padding: 0.5rem 1rem;
-      font-size: $default-font-size;
-      color: $font-dark;
-
-      &:hover {
-        background-color: $primary-dark;
-        color: $font-light;
-        transition: 300ms;
-      }
+    &--min {
+      padding: 2rem 0;
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: center;
+      gap: 1rem;
     }
+
+
+  }
+
+}
+
+.nav-link {
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  font-size: $default-font-size;
+  color: $font-dark;
+
+  &:hover {
+    background-color: $primary-dark;
+    color: $font-light;
+    transition: 300ms;
   }
 }
+
+
