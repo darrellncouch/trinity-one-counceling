@@ -132,6 +132,10 @@
   &__img {
     flex-basis: 3rem;
 
+    @include respond(phone) {
+      flex-basis: 1rem;
+    }
+
   }
 
   &__text {
