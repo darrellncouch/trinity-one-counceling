@@ -1,5 +1,5 @@
 <div class="app-container">
   <app-navbar *ngIf="!isMobile"/>
   <app-mobile-navbar *ngIf="isMobile" />
-  <app-home />
+  <app-home [isMobile]="isMobile" />
 </div>

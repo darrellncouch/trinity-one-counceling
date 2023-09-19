@@ -160,6 +160,10 @@
       gap: 2rem;
       font-size: 2rem;
 
+      @include respond(phone) {
+        flex-direction: column;
+      }
+
       .treatment-item {
         padding: 1rem;
       }
@@ -299,6 +303,10 @@
     justify-content: center;
     color: $font-dark;
     padding: 1rem;
+
+    @include respond(phone) {
+      align-items: flex-start;
+    }
   }
 
   &__header {

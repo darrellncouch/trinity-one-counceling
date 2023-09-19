@@ -1,8 +1,8 @@
 <div class="page">
   <div class="hero" id="home">
-      <span>Adults &#183; Teens &#183; Children &#183; Couples</span>
+      <span>Adults <span *ngIf="!isMobile">&#183;</span> Teens <span *ngIf="!isMobile">&#183;</span> Children <span *ngIf="!isMobile">&#183;</span> Couples</span>
       <div class="hero-divider"></div>
-      <span>Depression &#183; Anxiety &#183; Trauma</span>
+      <span>Depression <span *ngIf="!isMobile">&#183;</span> Anxiety <span *ngIf="!isMobile">&#183;</span> Trauma</span>
   </div>
 
   <section id="practice"  class="section practice-description">
@@ -49,13 +49,13 @@
 
       <div class="card__body">
         <span class="treatment-item">Trauma</span>
-        <span>&#183;</span>
+        <span *ngIf="!isMobile">&#183;</span>
         <span class="treatment-item">Grief</span>
-        <span>&#183;</span>
+        <span *ngIf="!isMobile">&#183;</span>
         <span class="treatment-item">Anxiety</span>
-        <span>&#183;</span>
+        <span *ngIf="!isMobile">&#183;</span>
         <span class="treatment-item">Depression</span>
-        <span>&#183;</span>
+        <span *ngIf="!isMobile">&#183;</span>
         <span class="treatment-item">Overall mental well-being with couples, adults, and family.</span>
       </div>
     </div>
@@ -67,13 +67,13 @@
 
       <div class="card__body">
         <span class="treatment-item">Trauma Informed Care</span>
-        <span>&#183;</span>
+        <span *ngIf="!isMobile">&#183;</span>
         <span class="treatment-item">EMDR</span>
-        <span>&#183;</span>
+        <span *ngIf="!isMobile">&#183;</span>
         <span class="treatment-item">Mindfulness-Based Cognitive Therapy</span>
-        <span>&#183;</span>
+        <span *ngIf="!isMobile">&#183;</span>
         <span class="treatment-item">Internal Family Systems</span>
-        <span>&#183;</span>
+        <span *ngIf="!isMobile">&#183;</span>
         <span class="treatment-item">Three Principles (Mind, Thought & Consciousness)</span>
       </div>
 
