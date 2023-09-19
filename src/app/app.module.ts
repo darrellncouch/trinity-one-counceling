@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { HostListener, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -7,6 +7,7 @@ import { NavbarComponent } from './layout/navbar/navbar.component';
 import { HomeComponent } from './pages/home/home.component';
 import { PracticeComponent } from './pages/practice/practice.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { MobileNavbarComponent } from './layout/mobile-navbar/mobile-navbar.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { FooterComponent } from './components/footer/footer.component';
     NavbarComponent,
     HomeComponent,
     PracticeComponent,
-    FooterComponent
+    FooterComponent,
+    MobileNavbarComponent
   ],
   imports: [
     BrowserModule,
@@ -23,4 +25,4 @@ import { FooterComponent } from './components/footer/footer.component';
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {}
