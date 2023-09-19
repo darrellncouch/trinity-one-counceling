@@ -1,0 +1,153 @@
+@import "../../../sass/abstracts/mixins";
+@import "../../../sass/abstracts/variables";
+@import "../../../sass/components/section";
+
+.aboutme {
+  background-image: linear-gradient(
+    to right bottom,
+    rgba(rgb(0, 0, 0), 0.6),
+    rgba(rgb(83, 83, 83), 0.4)),
+    url(../../../assets/images/iStock-1141382827.jpg);
+  background-size: cover;
+  background-position: center;
+
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+
+  @include respond(phone) {
+    padding: 5rem 1rem 0 1rem;
+    background-size: 1000%;
+    background-repeat: no-repeat;
+    height: auto;
+  }
+
+  &__container {
+    width: 80svw;
+    padding: 3rem;
+    background-color: rgba(0, 0, 0, 0.479);
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: center;
+
+    @include respond(tab-port) {
+      justify-content: center;
+      align-items: flex-start;
+    }
+
+    @include respond(phone) {
+      width: 100%;
+      padding: 1rem;
+      justify-content: center;
+    }
+
+    &-text {
+      flex-basis: 76%;
+      padding: 1rem 3rem;
+      color: $font-light;
+      font-size: $default-font-size;
+
+      @include respond(tab-land) {
+        flex-basis: 65%;
+      }
+
+      @include respond(tab-port) {
+        padding: 0;
+        flex-basis: 100%;
+      }
+    }
+
+    &-experience {
+      flex-basis: 100%;
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: center;
+      align-items: center;
+      color: $font-light;
+      gap: 1rem;
+
+      h3 {
+        flex-basis: 100%;
+        text-align: center;
+      }
+
+
+    }
+  }
+}
+
+.card {
+  flex-basis: 20%;
+  background-color: $background;
+
+  @include respond(tab-land) {
+    flex-basis: 25%;
+  }
+
+  @include respond(tab-port) {
+    flex-basis: 50%;
+  }
+
+  @include respond(phone) {
+    flex-basis: 100%;
+  }
+
+  &__img {
+    height: auto;
+    width: 100%;
+  }
+
+  &__body {
+    padding: 2rem;
+
+    @include respond(tab-port) {
+      padding: 1rem;
+    }
+  }
+
+}
+
+.experience-card {
+  background-color: #ffffff83;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  gap: 1rem;
+  height: 10rem;
+  width: 50rem;
+
+  @include respond(tab-port) {
+    width: 100%;
+  }
+
+  &__img {
+    flex-basis: 25%;
+
+  }
+
+  &__text {
+    flex-grow: 1;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    color: $font-dark;
+    padding: 1rem;
+
+    @include respond(phone) {
+      align-items: flex-start;
+    }
+  }
+
+  &__header {
+    font-size: 2rem;
+  }
+
+  &__sub-header {font-size: 1.5rem;}
+
+}
+
+.experience-img {
+  height: 100%;
+}

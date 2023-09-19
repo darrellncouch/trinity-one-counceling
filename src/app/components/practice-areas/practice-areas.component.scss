@@ -1,0 +1,52 @@
+@import "../../../sass/abstracts/mixins";
+@import "../../../sass/abstracts/variables";
+
+.practice-areas {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  gap: 3rem;
+  padding: 10rem;
+
+  @include respond(tab-port) {
+    padding: 5rem 1rem;
+  }
+
+  &__card {
+    width: 45%;
+    background-color: $forground;
+    display: flex;
+    flex-direction: column;
+    color: $font;
+
+    @include respond(tab-port) {
+      width: 100%;
+      text-align: center;
+    }
+
+    .card__header {
+      width: 100%;
+      text-align: center;
+      padding: 2rem 0;
+      font-size: 3rem;
+    }
+
+    .card__body {
+      padding: 3rem;
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: center;
+      align-items: center;
+      gap: 2rem;
+      font-size: 2rem;
+
+      @include respond(phone) {
+        flex-direction: column;
+      }
+
+      .treatment-item {
+        padding: 1rem;
+      }
+    }
+  }
+}
