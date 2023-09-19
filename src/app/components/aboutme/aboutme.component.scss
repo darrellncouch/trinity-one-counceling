@@ -120,10 +120,11 @@
 
   @include respond(tab-port) {
     width: 100%;
+    gap: 0;
   }
 
   &__img {
-    flex-basis: 25%;
+    flex-basis: 3rem;
 
   }
 
@@ -137,6 +138,7 @@
 
     @include respond(phone) {
       align-items: flex-start;
+
     }
   }
 
