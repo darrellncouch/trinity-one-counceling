@@ -133,7 +133,7 @@
     flex-basis: 3rem;
 
     @include respond(phone) {
-      flex-basis: 20px;
+      flex-basis: 25%;
     }
 
   }
@@ -149,6 +149,7 @@
     @include respond(phone) {
       align-items: flex-start;
       padding: 0;
+      flex-basis: 75%;
 
     }
   }
