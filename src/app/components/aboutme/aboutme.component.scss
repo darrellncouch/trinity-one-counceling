@@ -43,6 +43,10 @@
       justify-content: center;
     }
 
+    &--header {
+      text-align: center;
+    }
+
     &-text {
       flex-basis: 76%;
       padding: 1rem 3rem;
@@ -109,65 +113,9 @@
 
 }
 
-// .experience-card {
-//   background-color: #ffffff83;
-//   display: flex;
-//   flex-flow: row nowrap;
-//   justify-content: center;
-//   gap: 1rem;
-//   height: 10rem;
-//   width: 50rem;
-
-//   @include respond(tab-port) {
-//     width: 100%;
-//     gap: 0;
-//   }
-
-//   @include respond(phone) {
-//     width: 100%;
-//     gap: 0;
-//   }
-
-
-//   &__img {
-//     flex-basis: 3rem;
-
-//     @include respond(phone) {
-//       flex-basis: 100px;
-//     }
-
-//   }
-
-//   &__text {
-//     flex-grow: 1;
-//     display: flex;
-//     flex-flow: column;
-//     justify-content: center;
-//     color: $font-dark;
-//     padding: 1rem;
-
-//     @include respond(phone) {
-//       align-items: flex-start;
-//       padding: 0;
-//       flex-basis: calc(100% - 100px);
-
-//     }
-//   }
-
-//   &__header {
-//     font-size: 2rem;
-//     width: 100%;
-//     text-wrap: nowrap;
-//   }
-
-//   &__sub-header {font-size: 1.5rem;}
-
-// }
-
 .experience-img {
   height: 100%;
 }
-
 
 .experience-card {
   background-color: #ffffff83;
