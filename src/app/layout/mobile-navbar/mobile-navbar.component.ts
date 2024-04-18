@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { siteConfig } from 'src/core/config/site.config';
 
 @Component({
   selector: 'app-mobile-navbar',
@@ -9,6 +10,7 @@ export class MobileNavbarComponent {
 
   public expanded = false;
   public loadMenu = false;
+  public config = siteConfig;
 
   public expandedClass = "mobile-nav";
 

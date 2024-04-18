@@ -1,4 +1,5 @@
 import { Component, HostListener } from '@angular/core';
+import { siteConfig } from 'src/core/config/site.config';
 
 @Component({
   selector: 'app-navbar',
@@ -13,6 +14,7 @@ export class NavbarComponent {
   public headingSClass = "navbar__heading--secondary";
   public menuClass = "navbar__menu"
   public isAtTop = true;
+  public config = siteConfig;
 
   @HostListener('window:scroll', [])
   onWindowScroll() {

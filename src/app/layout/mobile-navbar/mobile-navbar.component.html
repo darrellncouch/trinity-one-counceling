@@ -1,7 +1,7 @@
 <div [ngClass]="expandedClass">
 
   <div class="mobile-nav__main">
-    <span>Trinity-One Counseling</span>
+    <span>{{config.companyName}}</span>
     <button class="mobile-nav__btn" (click)="toggleMenu()">
       <span class="material-symbols-outlined">
         menu
@@ -13,11 +13,11 @@
   <div *ngIf="expanded" class="mobile-nav--expanded__menu">
 
     <a class="btn__outline--primary-dark ease" href="mailto:debra@trinityonecounseling.com">
-      debra@trinityonecounseling.com
+      {{config.contactInfo.email}}
     </a>
 
-    <a class="btn__outline--primary-dark ease" href="tel:6022778228">
-      (602) 277-8228
+    <a class="btn__outline--primary-dark ease" href="tel:{{config.contactInfo.phone}}">
+      {{config.contactInfo.phoneDisplay()}}
     </a>
 
     <a class="nav-link" href="#home" (click)="toggleMenu()">Home</a>

@@ -1,9 +1,8 @@
 <footer class="footer">
-  <span>&copy; 2023 Trinity-One Counseling</span>
-  <span> 4545 N 36th St Suite 202, Phoenix, AZ 85018</span>
+  <span>&copy; {{currentYear}} {{config.companyName}}</span>
+  <span>{{config.contactInfo.address}}</span>
   <span>
-    This is a supervised practice. It is owned and managed by a master's level, non-independent licensee under Board-approved clinical supervision
-    pursuant to A.A.C. R4-6-211. The Board-approved clinical supervison of this practice is: Kim Kino, LPC LPC (480) 650-8883
-    leslie@joyfullheartscounseling.com
+    The Board-approved clinical supervisor of this practice is {{config.supervisorInfo.name}}, {{config.supervisorInfo.title}} {{config.supervisorInfo.phoneDisplay()}}
+    {{config.supervisorInfo.email}}
   </span>
 </footer>

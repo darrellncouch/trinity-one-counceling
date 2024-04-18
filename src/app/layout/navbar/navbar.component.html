@@ -7,10 +7,10 @@
   <div class="navbar__contact" *ngIf="isAtTop">
     <a class="btn__outline--primary-dark" href="mailto:debra@trinityonecounseling.com">
       <!-- debra@trinityonecounseling.com -->
-      debra@trinityonecounseling.com
+      {{config.contactInfo.email}}
     </a>
-    <a class="btn__outline--primary-dark" href="tel:6022778228">
-      (602) 277-8228
+    <a class="btn__outline--primary-dark" href="tel:{{config.contactInfo.phone}}">
+      {{config.contactInfo.phoneDisplay()}}
     </a>
   </div>
 
