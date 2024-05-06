@@ -12,45 +12,23 @@
     </div>
 
     <div class="aboutme__container-text">
-      <h3 class="aboutme__container--header">About me</h3>
-      <p>
-        I am an Arizona native growing up in a family of eleven, eight siblings, me, and my mother and father. Raised in a Catholic community and grade school,
-        this was the foundation that gave me a sense of love, belonging and the desire to be present for others. In my early teenage years my parents divorced
-        and this affected me in ways I never knew until I was in my early 20s. At the time, I did not deal with my circumstances in a healthy way but instead
-        tried to ignore the pain, only to have it surface later in much more painful ways to myself and others. This gave me the desire to learn more about human
-        behaviors to help myself and others. I followed that desire by obtaining my Master’s Degree in Professional Counseling and further with a Post-Master’s
-        Certificate in Trauma-Informed Care, both at Grand Canyon University. I have four years of experience in trauma-informed care and 20 years of experience
-        managing a prominent mediation firm in Phoenix.
-      </p>
+      <h3 class="aboutme__container--header">{{config.siteInfo.about.header}}</h3>
 
-      <p>
-        Personally, I enjoy spending time with God and my adult children and grandchildren. I love hiking, bicycling and reading. I value my relationships because
-        they have been key in showing me how to love myself and others. By putting “the other’s” interests ahead of our own we create a win-win experience which
-        brings immense joy to each day.
+      <p *ngFor="let text in config.siteInfo.about.content">
+        {{text}}
       </p>
 
       <div class="aboutme__container-experience">
-        <h3>Professional History</h3>
+        <h3>{{config.siteInfo.professional.header}}</h3>
 
-        <div class="experience-card">
+        <div class="experience-card" *ngFor="let item in config.siteInfo.professional.content">
           <div class="experience-card__img">
-            <img class="experience-img" src="../../../assets/images/1678117596747.png" alt="">
+            <img class="experience-img" [src]="pathBuilder(item.logo)" alt="">
           </div>
           <div class="experience-card__text">
-            <span class=experience-card__header>Inpatient Therapist</span>
-            <span class=experience-card__sub-header>Calvary Healing Center</span>
-            <span class="experience-card__body">Mar 2018 - Present</span>
-          </div>
-        </div>
-
-        <div class="experience-card">
-          <div class="experience-card__img">
-            <img class="experience-img" src="../../../assets/images/1642297138554.jpg" alt="">
-          </div>
-          <div class="experience-card__text">
-            <span class=experience-card__header>Licensed Associate Counselor</span>
-            <span class=experience-card__sub-header>Kino Counseling Center</span>
-            <span class="experience-card__body">Apr 2023 - Present</span>
+            <span class=experience-card__header>{{item.company}}</span>
+            <span class=experience-card__sub-header>{{item.title}}</span>
+            <span class="experience-card__body">{{item.startDate}} - {{item.endDate}}</span>
           </div>
         </div>
 
