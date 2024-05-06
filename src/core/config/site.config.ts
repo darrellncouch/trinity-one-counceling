@@ -12,9 +12,9 @@ export const siteConfig = {
     address: "1110 E. Missouri Avenue, Suite 640, Phoenix, AZ 85014"
   },
   supervisorInfo: {
-    name: "Kim Kino",
+    name: "Kimberly Kino",
     title: "LPC",
-    email: "kimkino@kniocounseling.com",
+    email: "kimkino@kinocounselingcenter.com",
     phone: "4806508883",
     phoneDisplay: () => PhoneUtility.displayFormat(siteConfig.supervisorInfo.phone)
   },
