@@ -9,7 +9,7 @@ export class AboutmeComponent {
 
   public config = siteConfig;
 
-  public assetPath = "../../../";
+  public assetPath = "../../../assets/images/";
   public kinoLogo = this.config.siteInfo.professional.content[0].logo;
   public calveryLogo = this.config.siteInfo.professional.content[1].logo;
 

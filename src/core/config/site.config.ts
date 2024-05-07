@@ -56,7 +56,7 @@ export const siteConfig = {
         {
           id: 1,
           logo: Assets.images[Assets.images.map(x => x.id).indexOf(2)],
-          titel: "Inpatient Therapist",
+          title: "Inpatient Therapist",
           company: "Calvery Healing Center",
           startDate: "Mar 2018",
           endDate: "Present"
@@ -64,7 +64,7 @@ export const siteConfig = {
         {
           id: 2,
           logo: Assets.images[Assets.images.map(x => x.id).indexOf(1)],
-          titel: "Licensed Associate Counselor",
+          title: "Licensed Associate Counselor",
           company: "Kino Counseling Center",
           startDate: "Apr 2023",
           endDate: "Present"
