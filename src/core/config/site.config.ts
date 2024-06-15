@@ -9,13 +9,13 @@ export const siteConfig = {
     email: "debra@trinityonecounseling.com",
     title: "MPC, LAC Associate Counselor",
     phoneDisplay: () => PhoneUtility.displayFormat(siteConfig.contactInfo.phone),
-    address: "1110 E. Missouri Avenue, Suite 640, Phoenix, AZ 85014"
+    address: "4545 N. 36th St. Suite 105 Phoneix, AZ 85018"
   },
   supervisorInfo: {
-    name: "Kimberly Kino",
+    name: "Leslie Pechkurow",
     title: "LPC",
-    email: "kimkino@kinocounselingcenter.com",
-    phone: "4806508883",
+    email: "leslie@joyfulheartscounseling.com",
+    phone: "4804208426",
     phoneDisplay: () => PhoneUtility.displayFormat(siteConfig.supervisorInfo.phone)
   },
   siteInfo: {
@@ -59,7 +59,7 @@ export const siteConfig = {
           title: "Inpatient Therapist",
           company: "Calvery Healing Center",
           startDate: "Mar 2018",
-          endDate: "Present"
+          endDate: "Nov 2023"
         },
         {
           id: 2,
@@ -67,7 +67,7 @@ export const siteConfig = {
           title: "Licensed Associate Counselor",
           company: "Kino Counseling Center",
           startDate: "Apr 2023",
-          endDate: "Present"
+          endDate: "May 2024"
         }
       ]
     }
